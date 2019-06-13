@@ -1,0 +1,25 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --grep Fake",
+    "test-real": "mocha --recursive  --timeout 15000 --grep Real",
+    "test-focus": "mocha --recursive  --timeout 15000 --grep focustest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-fs": "^2.0.0",
+    "mocha": "^6.1.4",
+    "sinon": "^7.3.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "json2csv": "^4.5.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
